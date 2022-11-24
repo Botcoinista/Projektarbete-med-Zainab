@@ -1,0 +1,24 @@
+
+
+@mixin flex($direction, $justify, $align ) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin border($color) {
+    border: 6px solid $color; 
+}
+
+@mixin background($background) {
+    background-color: #BBD4AF;
+}
+
+@mixin footer($footerColor) {
+    background-color:#404040;
+}
+
+@mixin font($fontstyle) {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}

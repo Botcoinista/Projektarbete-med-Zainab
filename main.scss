@@ -1,0 +1,140 @@
+@import "partials/mixins";
+@import "partials/variables";
+
+
+.LeftBox {
+  @include border($borderColor);
+  @include flex(column,center,center);
+  background-color: blue;
+ 
+}
+
+.RightBox {
+    @include border($borderColor);
+    @include flex(column,center,center);
+    background-color: orangered;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+Body {
+    @include background($background);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+img {
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+  
+}
+
+h2 {
+    text-align: center;
+    margin: 5rem;
+}
+
+.topdiv {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   flex-wrap: wrap;
+   gap: 4rem;
+   margin:4rem;
+//    @include border($borderColor);
+}
+
+//Alla direkta children till Parent
+.topdiv > * {
+    text-align: center;
+//   flex-grow: 1;
+//   flex-shrink: 1;
+max-width: 15rem;
+//    @include border($borderColor);
+}
+
+.bottomdiv {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   flex-wrap: wrap;
+   gap: 4rem;
+   margin: 4rem;
+   
+//    @include border($borderColor);
+}
+
+//Alla direkta children till Parent
+.bottomdiv > * {
+    text-align: center;
+//   flex-grow: 1;
+//   flex-shrink: 1;
+max-width: 15rem;
+//    @include border($borderColor);
+}
+
+//Historik
+.Historik-container {
+    display: flex;
+    justify-content: center;
+    margin: 10rem;
+}
+
+.historik {
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+    text-align: center;
+}
+
+
+
+//Footer
+.footer-container { 
+    @include footer($footerColor);
+    min-height: 350px;
+    width: 100%;
+    font-size: 15px;
+} 
+
+.footer-wrapper {
+    min-height:350px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+   
+}
+
+.footer-wrapper > * {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    color:rgb(254, 254, 254);
+    // @include font($fontstyle);
+    margin:30px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+
+
+div {
+    // border: 4px solid black;
+}
+
+a {
+    margin: 10px;
+    text-decoration: none;
+    color:white;
+}
+
+p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;;
+}
+
+
