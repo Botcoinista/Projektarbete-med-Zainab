@@ -1,30 +1,16 @@
-.LeftBox {
-  border: 6px solid rgb(255, 0, 0);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: blue;
-}
-
-.RightBox {
-  border: 6px solid rgb(255, 0, 0);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: orangered;
-}
-
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Montserrat", sans-serif;
 }
 
 Body {
   background-color: #BBD4AF;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 img {
@@ -84,9 +70,11 @@ h2 {
   min-height: 350px;
   width: 100%;
   font-size: 15px;
+  margin-top: auto;
 }
 
 .footer-wrapper {
+  position: relative;
   min-height: 350px;
   display: flex;
   justify-content: center;
@@ -112,4 +100,85 @@ a {
 
 p {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 20px 100px;
+  margin-bottom: 250px;
+  margin-top: 100px;
+}
+
+.form-container:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 1200px;
+  background: url("Images/beach.jpg");
+  background-size: cover;
+  z-index: -1;
+  filter: blur(1px);
+}
+
+.contact-box {
+  max-width: 850px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #fff;
+}
+
+.left {
+  height: 100%;
+  background: url("Images/spaFormLjus.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.right {
+  padding: 25px 40px;
+}
+
+.kontakth2 {
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.kontakth2::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  height: 4px;
+  width: 50px;
+  border-radius: 4px;
+  background-color: #2ecc71;
+}
+
+.field {
+  width: 100%;
+  padding: 1rem 1rem;
+  outline: none;
+  border: none;
+  background-color: rgba(230, 230, 230, 0.6);
+  font-size: 1.1rem;
+  margin-bottom: 22px;
+  transition: 0.3s;
+}
+
+.field:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.field:focus {
+  background-color: #fff;
+  border: 2px solid rgba(30, 85, 250, 0.47);
 }/*# sourceMappingURL=main.css.map */
