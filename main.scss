@@ -1,27 +1,26 @@
 @import "partials/mixins";
 @import "partials/variables";
+@import "partials/footer";
+@import "partials/form";
+
+// div {
+//     border: 3px solid red;
+// }
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 //   font-family: "Montserrat", sans-serif;
-  // border: 3px solid red;
+  font-family: 'Playfair Display', serif;
 }
 
 .body-omoss {
   width: 100%;
-  height: 1700px;
+  height: 1800px;
   background: url("Images/Screenshot\ 2022-11-29\ at\ 12.42.57.png");
   background-size: cover;
   background-repeat: no-repeat;
-
-  // z-index: -1;
-}
-
-.copyright-div {
-  height: 300px;
-  margin-left: 200px;
 }
 
 .copyright-img {
@@ -31,6 +30,7 @@
   height: 50px;
   width: 50px;
   border-radius: 100%;
+  background-color: white;
 }
 
 div.test {
@@ -45,11 +45,13 @@ div.test {
   height: 350px;
   width: 250px;
 }
+
 .höjd-bredd {
   height: 150px;
   width: 150px;
   border-radius: 100%;
 }
+
 .höjd-bredd.test {
   height: 150px;
   width: 150px;
@@ -70,69 +72,47 @@ div.test {
   margin: 5rem;
   display: flex;
   justify-content: center;
-  margin: 5rem;
-  font-size:x-large;
+  font-size: 40px;
 }
 
 .topdiv {
   display: flex;
   flex-direction: row;
-  //   justify-content: center;
   flex-wrap: wrap;
   gap: 4rem;
   margin: 4rem;
-  //    @include border($borderColor);
 }
 
 //Alla direkta children till Parent
 .topdiv > * {
   text-align: center;
-  //   flex-grow: 1;
-  //   flex-shrink: 1;
   max-width: 15rem;
-  //    @include border($borderColor);
 }
 
 .slogan {
   display: flex;
   justify-content: center;
-  font-size: x-large;
+  font-size: 30px;
   align-items: center;
 }
 
 .bottomdiv {
   display: flex;
   flex-direction: row;
-  //   justify-content: center;
   flex-wrap: wrap;
   gap: 4rem;
   margin: 4rem;
-
-  //    @include border($borderColor);
-}
-
-@media (max-width: 1250px) {
-  .bottomdiv {
-    justify-content: center;
-  }
-  .topdiv {
-    justify-content: center;
-  }
 }
 
 //Alla direkta children till Parent
 .bottomdiv > * {
   text-align: center;
-  //   flex-grow: 1;
-  //   flex-shrink: 1;
   max-width: 15rem;
-  //    @include border($borderColor);
 }
 
 //Historik
 .Historik-container {
   display: flex;
-  // justify-content: center;
   margin: 7rem;
 }
 
@@ -146,153 +126,11 @@ div.test {
   padding: 2rem;
 }
 
-//Footer
-.footer-container {
-  @include footer($footerColor);
-  min-height: 350px;
-  width: 100%;
-  font-size: 15px;
-  margin-top: auto;
-}
-
-.footer-wrapper {
-  position: relative;
-  min-height: 350px;
-  min-width: 450px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-.footer-wrapper > * {
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-  flex-wrap: wrap;
-  color: rgb(254, 254, 254);
-  // @include font($fontstyle);
-  margin: 30px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-    sans-serif Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-}
-
-.footer-info {
-  display: flex;
-  flex-direction: row;
-  gap: 200px;
-  text-align: center;
-}
-
-// div {
-//   border: 4px solid black;
-// }
-
-.footer-länkar {
-  margin: 10px;
-  text-decoration: none;
-  color: white;
-  display: block;
-}
-
-.footer-länkar:hover {
-  color: #2ecc71;
-}
-
-.h3-kontakt {
-  margin-bottom: 10px;
-}
-
-// p {
-//     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;;
-
-// }
-
-//Form
-
-.form-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  padding: 20px 100px;
-  margin-bottom: 250px;
-  margin-top: 100px;
-}
-
-.form-container:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 1200px;
-  background: url("Images/beach.jpg");
-  background-size: cover;
-  z-index: -1;
-  filter: blur(1px);
-}
-
-.contact-box {
-  max-width: 850px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background-color: #fff;
-}
-
-.left {
-  height: 100%;
-  background: url("Images/spaFormLjus.jpg") no-repeat center;
-  background-size: cover;
-}
-
-.right {
-  // display: flex;
-  // flex-direction: column;
-  // margin: 20px;
-  padding: 25px 40px;
-}
-
-.kontakth2 {
-  position: relative;
-  padding-bottom: 10px;
-  text-align: center;
-  margin: 5rem;
-  // margin-bottom: 10px;
-}
-
-.kontakth2::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  transform: translateX(-50%);
-  height: 4px;
-  width: 50px;
-  border-radius: 4px;
-  background-color: #2ecc71;
-}
-
-.field {
-  width: 100%;
-  padding: 1rem 1rem;
-  outline: none;
-  border: none;
-  background-color: rgba(230, 230, 230, 0.6);
-  font-size: 1.1rem;
-  margin-bottom: 22px;
-  transition: 0.3s;
-}
-
-.field:hover {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-
-.field:focus {
-  background-color: #fff;
-  border: 2px solid rgba(30, 85, 250, 0.47);
+@media (max-width: 1250px) {
+    .topdiv {
+      justify-content: center;
+    }
+  .bottomdiv {
+    justify-content: center;
+  }
 }
