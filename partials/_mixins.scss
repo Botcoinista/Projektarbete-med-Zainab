@@ -11,14 +11,20 @@
     border: 6px solid $color; 
 }
 
-@mixin background($background) {
-    background-color: #BBD4AF;
+@mixin mainColor($mainColor) {
+    background-color: #A5F1E9;
 }
 
 @mixin footer($footerColor) {
     background-color:#404040;
 }
 
-@mixin font($fontstyle) {
+// @mixin font($fontstyle) {
+//     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+// }
+
+@mixin text-styling($size){
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-size:$size;
+    text-decoration: underline;
 }
