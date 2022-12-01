@@ -51,7 +51,7 @@
     position: relative;
     padding-bottom: 10px;
     text-align: center;
-    margin: 5rem;
+    margin: 1rem;
     // margin-bottom: 10px;
 }
   
@@ -69,7 +69,7 @@
   
 .field {
     width: 100%;
-    padding: 1rem 1rem;
+    padding: 0.5rem 0.5rem;
     outline: none;
     border: none;
     background-color: rgba(230, 230, 230, 0.6);
@@ -110,3 +110,14 @@
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+.bild-spa {
+    height: 150px;
+    width: 150px;
+    margin-bottom: 1rem;
+    // border-radius: 100%;
+  }
+
+// div {
+//     border: 3px solid red;
+// }
