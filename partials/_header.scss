@@ -1,0 +1,92 @@
+
+.navbar1 {
+    width: 100%;
+    height: 115vh;
+    background-image: linear-gradient(rgba(12, 3, 51, 0.3), rgba(12, 3, 51, 0.3));
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  nav {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 15px 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $footerColor;
+    opacity: 0.8;
+  
+    .logo {
+      width: 80px;
+  
+    }
+  
+    .navbarLI {
+      list-style: none;
+      display: inline-block;
+      margin-left: 100px;
+    }
+  
+    .navbarA {
+      text-decoration: none;
+      color: $forthColor;
+      font-size: 16px;
+    }
+  }
+  
+  .content {
+    text-align: center;
+  
+    .title {
+      @include rubrik(80px);
+      color: $forthColor;
+      font-weight: 600;
+      padding: 16px;
+      background-color: $footerColor;
+      opacity: 0.9;
+      border-radius: 20px;
+    }
+  
+    .contentA {
+      text-decoration: none;
+      display: inline-block;
+      color: whitesmoke;
+      font-size: 24px;
+  
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .title {
+      background-color: #2ecc71;
+    }
+  
+    .contentA {
+      color: gold;
+    }
+  }
+  
+  
+  .background-video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+  
+  }
+  
+  
+  
+  .logo {
+    height: 70px;
+    width: 80px;
+    border-radius: 100%;
+  }
+  
+  

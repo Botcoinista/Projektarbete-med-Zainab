@@ -28,3 +28,39 @@
     font-size:$size;
     text-decoration: underline;
 }
+
+
+@mixin produkt-sidan-style($background) {
+
+    background: $background;
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+  
+  
+    .tillvalH1 {
+        text-align: center;
+        padding: 30px;
+        color: $forthColor;
+        text-shadow: 1px 1px 2px $thirdColor;
+        margin-left: 260px;
+        background-color: #404040;
+        opacity: 0.7;
+        border-radius: 40px;
+        @include rubrik(60px);
+    } 
+  
+  }
+
+@mixin rubrik ($size){
+    font-family: "Playfair Display", serif;
+    font-size: $size;
+}
+
+
+@mixin brödtext ($size){
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: $size;
+}

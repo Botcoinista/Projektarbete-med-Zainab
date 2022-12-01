@@ -13,7 +13,6 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  align-items: center;
 }
 
 .footer-wrapper > * {
@@ -65,7 +64,7 @@
   height: 100%;
   padding: 20px 100px;
   margin-bottom: 250px;
-  margin-top: 70px;
+  margin-top: 120px;
 }
 
 .form-container:after {
@@ -170,11 +169,93 @@
   margin-bottom: 1rem;
 }
 
+.navbar1 {
+  width: 100%;
+  height: 115vh;
+  background-image: linear-gradient(rgba(12, 3, 51, 0.3), rgba(12, 3, 51, 0.3));
+  position: relative;
+  padding: 0 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 15px 8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #404040;
+  opacity: 0.8;
+}
+nav .logo {
+  width: 80px;
+}
+nav .navbarLI {
+  list-style: none;
+  display: inline-block;
+  margin-left: 100px;
+}
+nav .navbarA {
+  text-decoration: none;
+  color: #FFEBAD;
+  font-size: 16px;
+}
+
+.content {
+  text-align: center;
+}
+.content .title {
+  font-family: "Playfair Display", serif;
+  font-size: 80px;
+  color: #FFEBAD;
+  font-weight: 600;
+  padding: 16px;
+  background-color: #404040;
+  opacity: 0.9;
+  border-radius: 20px;
+}
+.content .contentA {
+  text-decoration: none;
+  display: inline-block;
+  color: whitesmoke;
+  font-size: 24px;
+}
+
+@media (max-width: 500px) {
+  .title {
+    background-color: #2ecc71;
+  }
+  .contentA {
+    color: gold;
+  }
+}
+.background-video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.logo {
+  height: 70px;
+  width: 80px;
+  border-radius: 100%;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Playfair Display", serif;
+}
+
+p, a {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 16px;
 }
 
 .body-omoss {
@@ -231,7 +312,7 @@ div.test {
 }
 
 .h2-centrering {
-  margin-top: 5rem;
+  margin-top: 8rem;
   display: flex;
   justify-content: center;
   font-size: 40px;
@@ -305,4 +386,198 @@ div.test {
     flex-direction: column;
     justify-content: start;
   }
+  .navbarUl {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+  }
+  .massage .tillvalH1 {
+    font-size: 13px;
+    background-color: aquamarine;
+  }
+}
+/* Main startsidan sidan */
+.row {
+  padding-top: 80px;
+  background-color: rgb(244, 237, 237);
+}
+
+.main-del2 {
+  margin-top: 80px;
+}
+.main-del2 .featurette-heading {
+  margin-top: 60px;
+  padding-left: 50px;
+}
+.main-del2 .lead {
+  margin-top: 30px;
+  padding-left: 50px;
+  font-size: 16px;
+}
+.main-del2 .bild1 {
+  width: 360px;
+  height: 400px;
+}
+.main-del2 .bild2 {
+  width: 450px;
+  height: 400px;
+}
+
+/* Tillval sidor */
+.massage {
+  background: url(bilder/massageBild.webp);
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+}
+.massage .tillvalH1 {
+  text-align: center;
+  padding: 30px;
+  color: #FFEBAD;
+  text-shadow: 1px 1px 2px #FFF6BF;
+  margin-left: 260px;
+  background-color: #404040;
+  opacity: 0.7;
+  border-radius: 40px;
+  font-family: "Playfair Display", serif;
+  font-size: 60px;
+}
+
+.privatSpa {
+  background: url(bilder/partnerpool.jpeg);
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+}
+.privatSpa .tillvalH1 {
+  text-align: center;
+  padding: 30px;
+  color: #FFEBAD;
+  text-shadow: 1px 1px 2px #FFF6BF;
+  margin-left: 260px;
+  background-color: #404040;
+  opacity: 0.7;
+  border-radius: 40px;
+  font-family: "Playfair Display", serif;
+  font-size: 60px;
+}
+
+.produkt {
+  background: url(bilder/bildprodukt.webp);
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+}
+.produkt .tillvalH1 {
+  text-align: center;
+  padding: 30px;
+  color: #FFEBAD;
+  text-shadow: 1px 1px 2px #FFF6BF;
+  margin-left: 260px;
+  background-color: #404040;
+  opacity: 0.7;
+  border-radius: 40px;
+  font-family: "Playfair Display", serif;
+  font-size: 60px;
+}
+
+.utepool {
+  background: url(bilder/utepool1.jpeg);
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+}
+.utepool .tillvalH1 {
+  text-align: center;
+  padding: 30px;
+  color: #FFEBAD;
+  text-shadow: 1px 1px 2px #FFF6BF;
+  margin-left: 260px;
+  background-color: #404040;
+  opacity: 0.7;
+  border-radius: 40px;
+  font-family: "Playfair Display", serif;
+  font-size: 60px;
+}
+
+.main-tillval {
+  background: linear-gradient(white, #FFF6BF);
+}
+
+.Information {
+  padding: 120px;
+  font-size: 20px;
+}
+.Information .InformationH2 {
+  text-align: center;
+}
+
+.prisLista {
+  text-align: center;
+  font-size: large;
+}
+.prisLista .prisListaUl {
+  list-style: none;
+}
+
+.boka {
+  border: 1px solid rgb(212, 242, 246);
+  background-color: #A5F1E9;
+  padding: 20 20px;
+  width: 130px;
+  height: 50px;
+  border-radius: 20px;
+}
+
+.produktGroup {
+  margin-top: auto;
+}
+.produktGroup .produktBild {
+  width: 100%;
+  height: 400px;
+}
+.produktGroup .produktSpan {
+  font-size: 16px;
+  margin-left: 170px;
+  padding: 3px;
+  background-color: #FFF6BF;
+}
+
+/* recenion sidan  */
+.omdömeH2 {
+  text-align: center;
+  padding-top: 80px;
+}
+
+.omdömeImg {
+  width: 100px;
+  height: 100px;
+}
+
+.omdömeSpan {
+  font-size: 30px;
+}
+
+.kund-recension {
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+}
+.kund-recension .recension {
+  padding: 20px;
+  border: 1px solid gainsboro;
+  margin: 20px;
+  background-color: rgb(245, 248, 250);
+}
+.kund-recension img {
+  width: 110px;
 }/*# sourceMappingURL=main.css.map */
