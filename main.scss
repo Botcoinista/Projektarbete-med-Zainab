@@ -21,8 +21,6 @@ p,a {
 
 }
 
-
-
 .body-omoss {
   width: 100%;
   height: 1800px;
@@ -134,44 +132,6 @@ div.test {
   padding: 2rem;
 }
 
-// Media Queries
-
-@media (max-width: 1250px) {
-  .topdiv {
-    justify-content: center;
-  }
-  .bottomdiv {
-    justify-content: center;
-  }
-  .footer-wrapper {
-    display: flex;
-    flex-direction: column;
-  }
-  .footer-info {
-    justify-content: center;
-    gap: 0px;
-  }
-  .footer-wrapper > * {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-  }
-  .navbarUl {
-    display: flex;
-    flex-direction: column;
-    margin: 10px;
-  }
-
-  .massage .tillvalH1{
-    font-size: 13px;
-    background-color: aquamarine;
-  }
-}
-
-
-
-
-
 /* Main startsidan sidan */ 
 
 .row {
@@ -213,11 +173,9 @@ div.test {
   @include produkt-sidan-style(url(bilder/partnerpool.jpeg));
 }
 
-
 .produkt {
   @include produkt-sidan-style(url(bilder/bildprodukt.webp));
 }
-
 
 .utepool {
   @include produkt-sidan-style(url(bilder/utepool1.jpeg));
@@ -253,8 +211,6 @@ div.test {
   width: 130px;
   height: 50px;
   border-radius: 20px;
-
-
 }
 
 .produktGroup {
@@ -264,7 +220,6 @@ div.test {
     width: 100%;
     height: 400px;
   }
-
 
   .produktSpan {
     font-size: 16px;
@@ -308,3 +263,38 @@ div.test {
   }
 
 }
+
+// Media Queries
+
+@media (max-width: 1250px) {
+  .topdiv {
+    justify-content: center;
+  }
+  .bottomdiv {
+    justify-content: center;
+  }
+  .footer-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-info {
+    justify-content: center;
+    gap: 0px;
+  }
+  .footer-wrapper > * {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+  .navbarUl {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+  }
+
+  .massage .tillvalH1{
+    font-size: 13px;
+    background-color: aquamarine;
+  }
+}
+
